@@ -1,0 +1,6 @@
+# vagrant
+/.vagrant
+
+# dynamodb mount point
+/dynamodb/*
+!.gitkeep

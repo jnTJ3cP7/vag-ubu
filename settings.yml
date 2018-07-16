@@ -1,0 +1,13 @@
+guestuser: vagrant
+mount:
+  - ${HOME}/git
+dynamodb: ./dynamodb
+vbguest: true
+vb:
+  memory: 1024
+  cpus: 2
+ports:
+  # dynamodb-admin
+  - 8001
+# hostsupdater:
+#   - 'ubuntu1804.local'
