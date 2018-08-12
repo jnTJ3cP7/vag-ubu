@@ -4,3 +4,7 @@
 # dynamodb mount point
 /dynamodb/*
 !.gitkeep
+
+# redis mount point
+/containers/redis/volumes/data/*
+!.gitkeep

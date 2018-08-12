@@ -17,7 +17,6 @@ case $# in
 		;;
 esac
 
-# set Locale and Timezone
 update-locale LC_ALL=C.UTF-8
 timedatectl set-timezone Asia/Tokyo
 
@@ -90,4 +89,8 @@ codebuildexec () {
 }
 EOF
 
+# ToDo: use `which aws_completer`
 echo 'complete -C "${HOME}/.local/bin/aws_completer" aws' >> $HOME_DIR/.bashrc
+
+npm install -g json-server
+apt install -y redis-tools

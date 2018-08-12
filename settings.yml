@@ -1,6 +1,7 @@
 guestuser: vagrant
 mount:
   - ${HOME}/git
+  - ./containers
 dynamodb: ./dynamodb
 vbguest: true
 vb:

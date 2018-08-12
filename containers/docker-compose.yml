@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  redis:
+    ports:
+      - "6379:6379"
+    # image: redis:alpine
+    image: redis-customization
+    build: ./redis/context
+    command: ["redis-server", "--appendonly ", "yes"]
+    volumes:
+      - ./redis/volumes/data:/data
